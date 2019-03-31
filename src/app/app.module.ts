@@ -7,6 +7,12 @@ import { HomeComponent } from './componets/home/home.component';
 import { HeroesComponent } from './componets/heroes/heroes.component';
 import { AboutComponent } from './componets/about/about.component';
 
+//Routas
+
+import{APP_ROUTING}from './app.routes'// aqui llegan los parametros de el arrchivo de rutas
+import { from } from 'rxjs';
+//Servicios
+//components
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +22,8 @@ import { AboutComponent } from './componets/about/about.component';
     AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
